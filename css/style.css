@@ -1,0 +1,752 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
+
+@font-face {
+    font-family: "Post No Bills Jaffna";
+    src: local("☺"), url("../fonts/Post No Bills Jaffna Bold 700.woff") format("woff"),
+        url("../fonts/PostNoBillsJaffna-Bold.ttf") format("truetype"),
+        url("../fonts/PostNoBillsJaffna-Bold.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-width: 375px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+button:hover {
+    background: rgba(226, 221, 221, 0.2);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1109px;
+    margin: 0 auto;
+}
+
+.big-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.top-line {
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    color: #969696;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-line__left {
+    min-width: 355px;
+    height: 16px;
+    top: 14px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-line__phone {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-line__right {
+    width: 137px;
+    top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-line__right-enter {
+    display: flex;
+    text-align: center;
+}
+
+/* Second-line - nav */
+
+.second-line {
+    height: 80px;
+    left: 0px;
+    top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+}
+
+.second-line__porten {
+    width: 104px;
+    height: 49px;
+    font-family: "Post No Bills Jaffna";
+    color: white;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    padding-left: 10px;
+}
+
+.second-line__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    color: #969696;
+    margin-left: auto;
+    padding-right: 10px;
+    z-index: 2;
+}
+
+.second-line__menu-item {
+    font-size: 14px;
+    padding: 0 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.second-line__menu-item:hover {
+    font-weight: bold;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 31px 20px;
+}
+
+.second-line__burger {
+    color: white;
+    width: 40px;
+    transform: scale(2.5);
+}
+
+.burger-menu {
+    position: absolute;
+    right: 0;
+    list-style-type: none;
+    background: grey;
+    text-align: center;
+    z-index: 2;
+    padding: 30px;
+}
+
+.burger-menu li {
+    margin: 10px 0px;
+    line-height: 36px;
+}
+
+.burger-menu li a {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.burger-menu li:first-child a {
+    font-size: 72px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(32, 32, 32);
+}
+
+.hide {
+    display: none;
+}
+
+.intro {
+    max-width: 1920px;
+    height: 810px;
+    padding-top: 160px;
+    background-image: url("/img/header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.intro-logo {
+    height: 320px;
+    width: 320px;
+    border: 4px solid white;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.intro-logo__name {
+    font-family: "Post No Bills Jaffna";
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.intro-logo__line {
+    width: 179px;
+    margin: 0 auto;
+}
+
+.intro-logo__city {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.intro__subtext {
+    width: 730px;
+    height: 96px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.season {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-watches {
+    max-width: 1040px;
+    height: 730px;
+}
+
+.season-watches__title {
+    width: 376px;
+    height: 39px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 93px 0;
+}
+
+.season-watches__line {
+    width: 120px;
+    margin: 0 auto;
+}
+
+.season-watches__slider {
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.watch-card {
+    margin: 0 auto;
+    height: 460px;
+    width: 260px;
+}
+
+.watch-card__imageframe {
+    width: 100%;
+    /* height: 325px; */
+    background: #191b1c;
+    padding: 55px 0;
+}
+
+.watch-card__image {
+    width: 215px;
+    height: 214px;
+    background-image: url("/img/clock-img.png");
+    /* background-position: top left; */
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.watch-card__name {
+    width: 90%;
+    height: 24px;
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.watch-card__price {
+    width: 92px;
+    height: 21px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #d0d0d0;
+    margin-top: 10px;
+}
+
+.season-new {
+    width: 100%;
+    height: 730px;
+    background-image: url("/img/Rectangle8.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.season-new__title {
+    width: 376px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 445px;
+    padding-bottom: 30px;
+}
+.season-new__line {
+    width: 120px;
+}
+
+.season-new__button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-top: 30px;
+    padding: 10px 25px;
+}
+
+.season-new__button:hover {
+    cursor: pointer;
+}
+
+.season-pic {
+    background-image: url("/img/Rectangle9.png");
+    min-width: 880px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.season-collection {
+    max-width: 880px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.season-collection__title {
+    width: 376px;
+    height: 39px;
+    font-family: "Playfair Display";
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    padding: 100px 0 40px 0;
+}
+
+.season-collection__line {
+    width: 120px;
+}
+
+.season-collection__text {
+    max-width: 471px;
+    min-height: 173px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    padding: 40px 0 63px 0;
+}
+
+.season-collection__button {
+    min-width: 300px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.season-collection__button:hover {
+    cursor: pointer;
+}
+
+.new-watches {
+    max-width: 1920px;
+    max-height: 1289px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-watches__title {
+    width: 448px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin: 120px 0 40px 0;
+}
+
+.new-watches__line {
+    width: 120px;
+}
+
+.watch-wrapper {
+    width: 1109px;
+    max-height: 1040px;
+    margin: 50px 0 0 0;
+}
+
+.brands {
+    max-width: 1920px;
+    min-height: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #0f0f0f;
+}
+
+.brand__title {
+    width: 289px;
+    height: 48px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin: 60px 0 40px 0;
+}
+
+.brands__wrapper {
+    max-width: 1109px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.brand__card {
+    width: 255px;
+    height: 94px;
+}
+
+.line {
+    width: 120px;
+}
+
+.footer {
+    max-width: 1920px;
+    min-height: 400px;
+    background: url("/img/Rectangle15.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.footer-block-wrapper {
+    margin: 0 auto;
+    padding-top: 80px;
+    max-width: 1109px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-block {
+    background: none;
+    min-height: 253px;
+    width: 350px;
+}
+
+.footer-block__title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.footer-block__text {
+    margin: 40px 0;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.footer-block__tags-area {
+    display: flex;
+    gap: 20px 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: flex-start;
+}
+
+.footer-block__tag {
+    padding: 10px 20px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #d0d0d0;
+    background: #000;
+    border: none;
+}
+
+.footer-block__tag:hover {
+    cursor: pointer;
+}
+
+.footer-inputblock {
+    display: flex;
+}
+.footer-block__input {
+    width: 196px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding-left: 1rem;
+}
+.footer-block__input {
+    outline: 0;
+}
+
+.footer-block__button {
+    width: 138px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    padding: 10px 15px;
+    border: none;
+    background: #000;
+    color: white;
+}
+
+.footer-block__button:hover {
+    cursor: pointer;
+}
+
+.lastdiv {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #0f0f0f;
+}
+.last__line {
+    margin: 0 auto;
+    max-width: 1109px;
+    height: 50px;
+    background: #0f0f0f;
+    font-family: "PT Sans", sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last__line a {
+    cursor: pointer;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #d0d0d0;
+}
+
+/* Adaptiveness */
+
+@media only screen and (min-width: 1500px) {
+    .second-line__burger {
+        display: none;
+    }
+    .watch-wrapper .swiper-wrapper {
+        width: 1109px;
+        height: 1040px;
+    }
+    .watch-wrapper .swiper-slide {
+        height: calc((100% - 30px) / 2);
+    }
+    .season-watches__slider {
+        padding: 50px 80px 0 80px;
+    }
+}
+
+@media only screen and (min-width: 1109px) and (max-width: 1499px) {
+    .watch-wrapper,
+    .season-watches__slider {
+        width: 880px;
+    }
+
+    .watch-wrapper .swiper-slide {
+        height: 100%;
+    }
+
+    .second-line__burger {
+        display: none;
+    }
+    .season {
+        flex-direction: column;
+    }
+    .season2018 {
+        flex-direction: column-reverse;
+    }
+    .season-pic {
+        width: 100%;
+    }
+    .footer-block-wrapper {
+        padding: 80px 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1108px) {
+    .watch-wrapper,
+    .season-watches__slider {
+        width: 880px;
+    }
+    .top-line__text {
+        display: none;
+    }
+    .second-line__burger {
+        display: none;
+    }
+
+    .intro__subtext {
+        width: 70%;
+    }
+    .season {
+        flex-direction: column;
+    }
+    .season2018 {
+        flex-direction: column-reverse;
+    }
+    .season-pic {
+        width: 100%;
+    }
+
+    .brands__wrapper {
+        max-width: 750px;
+    }
+
+    .footer-block-wrapper {
+        padding: 80px 10px;
+    }
+
+    .last__line {
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top-line,
+    .second-line__menu {
+        display: none;
+    }
+    .second-line__burger {
+        display: flex;
+    }
+
+    .intro__subtext,
+    .season-collection__text {
+        width: 80%;
+    }
+
+    .season {
+        flex-direction: column;
+    }
+    .season2018 {
+        flex-direction: column-reverse;
+    }
+    .season-pic {
+        width: 100%;
+    }
+    .season-new__title,
+    .season-collection__title,
+    .new-watches__title,
+    .brand__title {
+        font-size: 1.5rem;
+        margin: 40px 0 20px 0;
+    }
+
+    .season-collection__title {
+        padding: 30px 0 40px 0;
+    }
+
+    .season-collection__text {
+        padding: 20px 0 30px 0;
+    }
+    .brands__wrapper {
+        max-width: 520px;
+        flex-direction: column;
+        padding: 0 0 20px 0;
+    }
+    .footer-block-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .last__line {
+        padding: 0 40px;
+    }
+    .second-line__porten {
+        padding-left: 30px;
+    }
+}
